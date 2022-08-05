@@ -59,7 +59,6 @@ static inline __m128 masked_read (int d, const float *x)
     // cannot use AVX2 _mm_mask_set1_epi32
 }
 
-
 float dist_optimized(const std::vector<float>& p1, const std::vector<float>& p2) {
     unsigned int d = p1.size();
     __m256 msum1 = _mm256_setzero_ps();
